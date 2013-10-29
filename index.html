@@ -1,0 +1,38 @@
+<!-- @include _header -->
+
+    <div id="main">
+        <!-- repeat:blogpost:15 -->
+        <article>
+            <div class="article_wrap">
+                <header>
+                    <h1 class="entry-title"><a target="_blank" href="%URL%">%TITLE%</a></h1>
+                    <div class="post-meta">
+                        <span class="post-date">%PUBLISHED_ON%</span>
+                        <span class="post-url">
+                        <!-- barleyglyph -->
+                        <a href="%BARLEY_URL%"><img src="<!-- @path slice.png -->" /></a>
+                        <!-- endbarleyglyph -->
+                        </span>
+                    </div>
+                </header>
+                <div class="entry-content clearfix">%BODY%</div>
+            </div>
+        </article>
+        <!-- endrepeat -->
+
+    <nav id="secondary-nav" class="clearfix" role="pagenavigation">
+        <div class="nav-previous">
+            <!-- next -->
+            <a href="#"><span class="meta-nav">&larr;</span> Older</a>
+            <!-- endnext -->
+        </div>
+        <div class="nav-next">
+            <!-- previous -->
+            <a href="#">Newer <span class="meta-nav">&rarr;</span></a>
+            <!-- endprevious -->
+        </div>
+    </nav> 
+
+    </div>
+
+<!-- @include _footer -->

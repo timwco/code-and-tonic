@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Code & Tonic</title>
+
+    <link rel='stylesheet' href='css/animate.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-43962833-1', 'codeandtonic.com');
+      ga('send', 'pageview');
+
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper" class="clearfix">
+        <aside id="sidebar" class="animated fadeInLeft">
+            <header id="masthead">
+                <div class="bio-pic">
+                    <a href="/" ><img alt='Code and Tonic' src='images/logo.png' width='80' /></a>
+                </div>
+                <hgroup>
+                    <h1 class="site-title"><a href="/" >Code & Tonic</a></h1>
+                    <h2 class="site-description" data-barley="site_index_title" data-barley-editor="simple">A small dash of awesome.</h2>
+                    <img src="http://codeandtonic.com/images/logo.png" style="display:none;" alt="Code and Tonic Logo" />
+                </hgroup>
+            </header>
+            <nav id="navigation">
+                <div class="menu">
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/updates">Updates</a></li>
+                        <!-- owner -->
+                        <li><a href="#" data-add-content-type="blogpost">NEW ONE</a></li>
+                        <!-- endowner -->
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+    <div id="main">
+        <!-- repeat:blogpost:15 -->
+        <article>
+            <div class="article_wrap">
+                <header>
+                    <h1 class="entry-title"><a target="_blank" href="%URL%">%TITLE%</a></h1>
+                    <div class="post-meta">
+                        <span class="post-date">%PUBLISHED_ON%</span>
+                        <span class="post-url">
+                        <!-- barleyglyph -->
+                        <a href="%BARLEY_URL%"><img src="images/slice.png" /></a>
+                        <!-- endbarleyglyph -->
+                        </span>
+                    </div>
+                </header>
+                <div class="entry-content clearfix">%BODY%</div>
+            </div>
+        </article>
+        <!-- endrepeat -->
+
+    <nav id="secondary-nav" class="clearfix" role="pagenavigation">
+        <div class="nav-previous">
+            <!-- next -->
+            <a href="#"><span class="meta-nav">&larr;</span> Older</a>
+            <!-- endnext -->
+        </div>
+        <div class="nav-next">
+            <!-- previous -->
+            <a href="#">Newer <span class="meta-nav">&rarr;</span></a>
+            <!-- endprevious -->
+        </div>
+    </nav> 
+
+    </div>
+
+    </div><!-- /#wrapper -->
+
+    <footer id="site-footer" role="contentinfo">
+        <div id="credit">&copy; 2013 - Code & Tonic</div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/scripts.js?9913"></script>
+
+</body>
+</html>
